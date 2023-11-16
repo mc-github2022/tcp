@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    body {
+        @apply bg-Dark font-dmSans
+    }
+}
+
+@layer components {
+    nav ul li a {
+        @apply block py-4 pl-4 pr-16 z-10
+    }
+    nav ul li {
+        @apply relative overflow-hidden rounded-tl-lg rounded-bl-lg
+    }
+    nav ul li a p {
+        @apply z-50 relative
+    }
+}
+nav ul li a::before {
+    content: "";
+    position:  absolute;
+    right: -10%;
+    bottom: -10%;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background-color: #09141A;
+    transition: 0.5s ease;
+    z-index: 0;
+}
+
+nav ul li a:hover::before {
+    width: 250px;
+    height: 250px;
+    transition: 0.5s ease;
+    border-radius: 50%;
+    transform: translate(20px,100px);
+    z-index: 0;
+}
