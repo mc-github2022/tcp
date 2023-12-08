@@ -4,18 +4,17 @@ module.exports = {
   theme: {
     container: {
       center: true,
-      padding: '2rem',
+      padding: "2rem",
     },
     colors: {
-      'primary' : '#039759',
-      'white' : '#ffffff',
-      'Dark' : '#09141A',
+      primary: "#039759",
+      white: "#ffffff",
+      Dark: "#09141A",
     },
     fontFamily: {
-      'dmSans' : ['DM Sans'],
+      dmSans: ["DM Sans"],
     },
     extend: {},
   },
   plugins: [],
-}
-
+};

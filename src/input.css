@@ -2,42 +2,144 @@
 @tailwind components;
 @tailwind utilities;
 
-
 @layer base {
-    body {
-        @apply bg-Dark font-dmSans
-    }
+  html {
+    @apply !scroll-smooth;
+  }
+  body {
+    @apply bg-Dark font-dmSans;
+  }
 }
 
 @layer components {
-    nav ul li a {
-        @apply block py-4 pl-4 pr-16 z-10
-    }
-    nav ul li {
-        @apply relative overflow-hidden rounded-tl-lg rounded-bl-lg
-    }
-    nav ul li a p {
-        @apply z-50 relative
-    }
+  nav > ul li a {
+    @apply block py-4 pl-4 pr-16 z-10;
+  }
+  nav ul li {
+    @apply relative overflow-hidden rounded-tl-lg rounded-bl-lg;
+  }
+  nav > ul li a p {
+    @apply z-50 relative;
+  }
+  .socialLinks a {
+    @apply bg-[#071E32] h-[28px] w-[28px] rounded-lg m-2 flex justify-center items-center  hover:border hover:border-white;
+  }
+  .contentContainer {
+    @apply lg:ml-[230px] w-[100%-230px] h-[100%] transition-all duration-75 relative;
+  }
+  .gradientHolder {
+    @apply after:absolute after:content-[''] after:w-[100%] after:h-[400px] after:bottom-0 after:bg-gradient-to-t after:from-Dark after:left-0;
+  }
+  .gradientHolderPrimary {
+    @apply after:absolute after:content-[''] after:opacity-70 after:w-[100%] after:h-[100%] after:bottom-0 after:bg-gradient-to-t after:from-[#105D4D] after:to-Dark after:left-0;
+  }
+  .btn {
+    @apply py-4 px-6 rounded-lg inline-block;
+  }
+  .btn-hover p {
+    @apply relative z-10;
+  }
+  .toggleMenu {
+    @apply block lg:hidden fixed top-5 bg-[#071E32] px-2 pt-2 pb-1 rounded-lg;
+  }
+  .toggleMenu span {
+    @apply block h-1 w-8 bg-white mb-1 transition-all duration-500;
+  }
+  .theTeamCard {
+    @apply relative;
+  }
+  .theTeamCard::after {
+    @apply content-[''] w-full absolute bottom-0 left-0 h-[150px] bg-gradient-to-t from-Dark/[0.5];
+  }
+  .topNav ul li a {
+    @apply px-3 py-2;
+  }
 }
 nav ul li a::before {
-    content: "";
-    position:  absolute;
-    right: -10%;
-    bottom: -10%;
-    width: 0;
-    height: 0;
-    border-radius: 50%;
-    background-color: #09141A;
-    transition: 0.5s ease;
-    z-index: 0;
+  content: "";
+  position: absolute;
+  right: -10%;
+  bottom: -10%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background-color: #09141a;
+  transition: 0.5s ease;
+  z-index: 0;
 }
 
 nav ul li a:hover::before {
-    width: 250px;
-    height: 250px;
-    transition: 0.5s ease;
-    border-radius: 50%;
-    transform: translate(20px,100px);
-    z-index: 0;
+  width: 250px;
+  height: 250px;
+  transition: 0.5s ease;
+  border-radius: 50%;
+  transform: translate(20px, 100px);
+  z-index: 0;
+}
+
+.btn-hover::before {
+  content: "";
+  position: absolute;
+  right: -10%;
+  bottom: -10%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background-color: #071e32;
+  transition: 0.5s ease;
+  z-index: 0;
+}
+
+.btn-hover:hover::before {
+  width: 250px;
+  height: 250px;
+  transition: 0.5s ease;
+  border-radius: 50%;
+  transform: translate(20px, 100px);
+  z-index: 0;
+}
+
+.main {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.sideNav.open {
+  left: 0;
+  z-index: 99;
+  background-color: #071e32;
+}
+
+.teamName {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: 0;
+  transition: 0.5s ease;
+}
+
+.theTeamCard:hover .teamName {
+  bottom: 10%;
+  opacity: 1;
+  transition: 0.5s ease;
+}
+
+.toggleMenu.open span:first-child {
+  transform: translate(-0.2rem, 0.25rem) rotate(-38deg);
+  transition: 0.5s;
+  width: 1rem;
+  border-radius: 16px;
+}
+
+.toggleMenu.open span:last-child {
+  transform: translate(-0.2rem, -0.3rem) rotate(38deg);
+  transition: 0.5s;
+  width: 1rem;
+  border-radius: 16px;
+}
+
+.theLogo img {
+  margin: 0 auto;
 }
