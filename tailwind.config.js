@@ -6,15 +6,24 @@ module.exports = {
       center: true,
       padding: "2rem",
     },
+
     colors: {
       primary: "#039759",
       white: "#ffffff",
-      Dark: "#09141A",
+      dark: "#09141A",
+      greenDark: "#105D4D",
+      greenDarker: "#093b31",
+      blueDark: "#071E32",
+      darker: "#09141A",
     },
     fontFamily: {
       dmSans: ["DM Sans"],
     },
-    extend: {},
+    extend: {
+      fontSize: {
+        clamp: "clamp(60px, 10vw, 120px)",
+      },
+    },
   },
   plugins: [],
 };
