@@ -110,7 +110,7 @@
   }
 
   .partners__logo img:nth-child(5) {
-    @apply ml-0 md:ml-20
+    @apply ml-0 lg:ml-20
   }
 
  
@@ -124,7 +124,63 @@
   }
 
   .map__form input[type="submit"] {
-    @apply  text-white rounded-lg outline-none border-none transition-colors cursor-pointer
+    @apply  text-white rounded-lg outline-none border-none transition-colors cursor-pointer py-4
+  }
+
+  .timeline__box {
+    @apply md:grid md:grid-cols-2
+  }
+
+  .timeline__box .content {
+    @apply md:px-[40px]
+  }
+
+  .timeline__box .content h4::after {
+    @apply hidden md:block content-[''] absolute w-[20px] h-[1px] bg-white
+  }
+
+  .timeline__box:nth-child(even) .content h4::after {
+    @apply bg-white top-1/2 -left-10
+  }
+
+  .timeline__box:nth-child(odd) .content h4::after {
+    @apply bg-white top-1/2 -right-10
+  }
+
+
+  .timeline__box:nth-child(even) .content {
+    @apply md:order-1 md:border-l 
+  }
+
+  .timeline__box:nth-child(odd) .content {
+    @apply md:order-1 md:border-r md:translate-x-[1px]
+  }
+
+  
+  .timeline__box:nth-child(odd) div:empty {
+    @apply md:order-2
+  }
+
+
+  .team__vm__img img {
+    @apply w-full h-[270px] object-cover
+  }
+
+  .member__card img  {
+    @apply grayscale transition-all w-full
+  }
+
+  .member__card:hover img {
+    @apply grayscale-0
+  }
+
+
+  .member__card ul {
+    @apply absolute left-1/2 -translate-x-1/2 -bottom-20 text-center transition-all
+  }
+
+  .member__card:hover ul {
+    @apply bottom-4
   }
 
 
@@ -240,29 +296,50 @@ nav ul li a:hover::before {
 
 
 .toggle__menu {
-  @apply absolute top-8 right-5
+  @apply absolute top-8 right-5 cursor-pointer lg:hidden
 }
 
+.toggle__menu span {
+@apply transition-all 
+}
+
+.toggle__menu.open span:nth-child(2){
+  @apply opacity-0
+}
+
+.toggle__menu.open span:nth-child(1){
+  @apply rotate-45 translate-x-1 translate-y-3
+}
+
+.toggle__menu.open span:nth-child(3){
+  @apply -rotate-45 translate-x-1 -translate-y-3
+}
+
+body.open {
+  @apply h-screen overflow-hidden
+}
 
 .toggle__menu span {
   @apply w-10 h-1 bg-white block mb-2
 }
-
+.main__nav.open {
+  @apply right-0
+}
 
 .main__nav {
-  @apply hidden top-20 right-0 z-50 bg-dark w-full h-screen p-8 md:!static md:h-auto md:p-2 
+  @apply fixed top-20 -right-[100vw] z-50 bg-dark w-full h-screen p-8  md:p-2  transition-all lg:static lg:h-auto
 }
 
 .main__nav ul {
-  @apply flex-col md:flex-row
+  @apply flex-col lg:flex-row
 }
-
+ 
 .main__nav ul li {
   @apply mb-5 relative
 }
 
 .main__nav ul li a {
-  @apply w-full text-2xl md:text-base
+  @apply w-full text-2xl lg:text-sm
 }
 
 .main__nav ul li.active__link {
@@ -285,3 +362,24 @@ nav ul li a:hover::before {
   background-clip: text;
   color: transparent;
 }
+
+
+/* @media screen and (min-width: 1300px ) {
+  .toggle__menu {
+    display: none;
+  }
+
+  .main__nav {
+    position: static;
+    height: unset;
+  }
+
+  .main__nav ul {
+    flex-direction: row;
+  }
+
+  
+  .main__nav ul a {
+    
+  }
+} */

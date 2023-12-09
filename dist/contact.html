@@ -9,6 +9,10 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900;9..40,1000&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
   </head>
   <body>
     <div class="topHeader py-6 bg-[#09141A] relative">
@@ -25,10 +29,10 @@
             </div>
             <div class="main__nav">
               <ul class="flex gap-2">
-                <li><a href="#">Product</a></li>
+                <li class="active__link"><a href="#">Product</a></li>
                 <li><a href="#">Materials</a></li>
                 <li><a href="#">Process</a></li>
-                <li class="active__link"><a href="#">Partners</a></li>
+                <li><a href="#">Partners</a></li>
                 <li><a href="#">VTPE TEAM</a></li>
                 <li><a href="#">Blogs</a></li>
                 <li><a href="#">Contact us</a></li>
@@ -46,8 +50,7 @@
       <div class="container relative">
         <div class="displayWrapper grid place-items-center h-[60vh]">
           <div class="pageTitle leading-[1] z-10">
-            <span class="text-[30px] uppercase">Our</span>
-            <h1 class="uppercase font-bold text-clamp">Partners</h1>
+            <h1 class="uppercase font-bold text-clamp">Contact Us</h1>
           </div>
           <p class="relative z-10 font-light max-w-[1300px] w-full mx-auto">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quasi
@@ -63,71 +66,84 @@
       </div>
     </div>
 
-    <section class="partners pt-24 py-18">
+    <section class="contact py-24">
       <div class="container">
-        <div class="max-w-[520px] w-full text-white mb-20">
-          <h4 class="mb-6">Trusted by 10,000+ companies around the world</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur. Ultricies vitae in
-            pellentesque volutpat. Urna eu velit nec et dui lacus. Velit.
-          </p>
+        <div class="grid mb-10 md:grid-cols-3 md:gap-10">
+          <div class="contact__info text-center text-white mb-6">
+            <i class="fas fa-map-marker-alt text-[40px] mb-6"></i>
+            <h5>Address</h5>
+            <p class="max-w-[200px] mx-auto">
+              2007 Woodland Springs Houston Tx 77077
+            </p>
+          </div>
+
+          <div class="contact__info text-center text-white mb-6">
+            <i class="fas fa-phone text-[40px] mb-6"></i>
+            <h5>Phone</h5>
+            <p class="max-w-[200px] mx-auto">
+              Ph: +1 (281) 455-2323 +1 (868) 368-1410
+            </p>
+          </div>
+
+          <div class="contact__info text-center text-white mb-6">
+            <i class="fas fa-envelope text-[40px] mb-6"></i>
+            <h5>Email</h5>
+            <p class="max-w-[200px] mx-auto">
+              info@company.com contact@company.com
+            </p>
+          </div>
         </div>
 
-        <div
-          class="partners__logo text-center mt-5 mb-24 md:flex md:gap-x-32 flex-col flex-wrap md:flex-row max-w-[1300px] w-full"
-        >
-          <img src="./img/logo-facebook.png" alt="" />
-          <img src="./img/logo-facebook.png" alt="" />
-          <img src="./img/logo-facebook.png" alt="" />
-          <img src="./img/logo-facebook.png" alt="" />
-          <img src="./img/logo-facebook.png" alt="" />
-          <img src="./img/logo-facebook.png" alt="" />
-          <img src="./img/logo-facebook.png" alt="" />
-          <img src="./img/logo-facebook.png" alt="" />
-        </div>
+        <div class="grid lg:grid-cols-[2fr_1fr] lg:gap-24">
+          <div class="text-white">
+            <h3>Message Us!</h3>
+            <p>
+              "Transforming discarded tires and industrial plastic into
+              versatile TPE pellets is a sustainable journey. Shredding,
+              blending, and extrusion work together in harmony to give new life
+              to old materials, crafting pellets ready for a second act in
+              various industries. Join us in paving the way for a greener, more
+              circular future!"
+            </p>
 
-        <div class="w-full text-white mb-20">
-          <h4 class="max-w-[520px] mb-6">
-            Amplify innovation, and chart a course for mutual growth.
-          </h4>
-          <p class="max-w-[820px] mb-10">
-            Let's forge a powerful alliance! Together, we can unlock limitless
-            possibilities and create a synergy that propels us to new heights.
-            Join forces with us to redefine success, amplify innovation, and
-            chart a course for mutual growth. Don't miss the chance to be part
-            of something extraordinary—let's build a partnership that not only
-            stands the test of time but also transforms the landscape of our
-            respective domains. Ready to embark on this journey together? Let's
-            make waves and leave an indelible mark on the future. Connect with
-            us now, and let the collaboration begin!
-          </p>
-
-          <a href="#" class="btn btn--accent">Unlock Posibilities</a>
+            <div class="mt-10 lg:flex lg:gap-8 lg:items-center">
+              <img src="./img/TPELogo2.png" alt="" />
+              <div>
+                <h5 class="uppercase">Thermoplatic Elastomer</h5>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur. Consequat purus
+                  imperdiet volutpat nunc proin ornare congue. Ac cursus
+                  ultrices augue orci quis. Eget risus viverra diam viverra
+                  posuere magna ut. Tortor.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="map__form text-white max-w-[420px] rounded-3xl mt-8 border-1 w-full mx-auto"
+          >
+            <h4 class="mb-1">Contact Us</h4>
+            <p class="mb-8 opacity-70">We want to hear from you</p>
+            <form action="">
+              <input type="text" placeholder="Name" />
+              <input type="email" placeholder="Email" />
+              <textarea
+                name=""
+                id=""
+                placeholder="Please type your message here..."
+              ></textarea>
+              <input
+                type="submit"
+                value="Send Message"
+                class="bg-greenDark hover:bg-greenDarker"
+              />
+            </form>
+          </div>
         </div>
       </div>
     </section>
 
     <section class="map relative">
-      <div class="container">
-        <div
-          class="map__blurb text-center bg-greenDark text-white px-3 py-8 md:p-10 md:translate-y-8"
-        >
-          <h4>Lorem, ipsum dolor</h4>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga atque
-            delectus eum, a, eveniet aspernatur voluptas animi harum qui minima
-            aliquam, quasi ex! Dolore fugiat sequi velit aspernatur, est illo
-            repudiandae, aperiam adipisci, ex rerum minima unde cumque deserunt
-            facilis sunt ducimus nostrum consectetur laborum a iure non
-            molestiae exercitationem aut soluta. Veritatis perspiciatis
-            repudiandae quod, repellat dolorem sed dolores voluptas reiciendis,
-            optio blanditiis rerum obcaecati minima at error corrupti
-            perferendis ipsa fuga aliquid ratione aliquam et debitis? Quod,
-            veniam.
-          </p>
-        </div>
-      </div>
-
       <div class="main__map">
         <iframe
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3870.372146568983!2d121.34546637509587!3d14.055188386369094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd5cd2d6006569%3A0x9075b8a72b9d5fb0!2sFrontline%20Business%20Solutions%2C%20Inc.!5e0!3m2!1sen!2sph!4v1702086093363!5m2!1sen!2sph"
@@ -155,29 +171,12 @@
                   <li>contact@company.com</li>
                 </ul>
               </div>
+
+              <div class="map__item mb-8 md:mb-0">
+                <img src="./img/TPELogo.png" alt="" />
+              </div>
             </div>
           </div>
-        </div>
-
-        <div
-          class="map__form text-white max-w-[360px] rounded-3xl bg-dark p-8 border-1 w-full mx-auto static lg:absolute right-[calc((100vw-1480px)/2)] top-1/3"
-        >
-          <h4 class="mb-1">Contact Us</h4>
-          <p class="mb-8 opacity-70">We want to hear from you</p>
-          <form action="">
-            <input type="text" placeholder="Name" />
-            <input type="email" placeholder="Email" />
-            <textarea
-              name=""
-              id=""
-              placeholder="Please type your message here..."
-            ></textarea>
-            <input
-              type="submit"
-              value="Send Message"
-              class="bg-greenDark hover:bg-greenDarker"
-            />
-          </form>
         </div>
       </div>
     </section>
