@@ -3,11 +3,12 @@
 @tailwind utilities;
 
 @layer base {
+
   html {
     @apply !scroll-smooth;
   }
   body {
-    @apply bg-dark font-dmSans ;
+    @apply bg-dark font-dmSans overflow-x-hidden;
   }
 
   h2 {

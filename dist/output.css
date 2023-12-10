@@ -445,6 +445,7 @@ html {
 }
 
 body {
+  overflow-x: hidden;
   --tw-bg-opacity: 1;
   background-color: rgb(9 20 26 / var(--tw-bg-opacity));
   font-family: DM Sans;
@@ -1069,6 +1070,10 @@ button.active {
   left: -100%;
 }
 
+.-right-5 {
+  right: -1.25rem;
+}
+
 .bottom-0 {
   bottom: 0px;
 }
@@ -1097,18 +1102,6 @@ button.active {
   top: 33.333333%;
 }
 
-.right-5 {
-  right: 1.25rem;
-}
-
-.-right-5 {
-  right: -1.25rem;
-}
-
-.isolate {
-  isolation: isolate;
-}
-
 .z-10 {
   z-index: 10;
 }
@@ -1117,20 +1110,16 @@ button.active {
   z-index: 30;
 }
 
+.z-\[50\] {
+  z-index: 50;
+}
+
 .z-\[99999\] {
   z-index: 99999;
 }
 
 .z-\[9999\] {
   z-index: 9999;
-}
-
-.z-\[\] {
-  z-index: ;
-}
-
-.z-\[50\] {
-  z-index: 50;
 }
 
 .m-auto {
@@ -1169,6 +1158,10 @@ button.active {
 
 .mb-24 {
   margin-bottom: 6rem;
+}
+
+.mb-3 {
+  margin-bottom: 0.75rem;
 }
 
 .mb-32 {
@@ -1213,10 +1206,6 @@ button.active {
 
 .mt-8 {
   margin-top: 2rem;
-}
-
-.mb-3 {
-  margin-bottom: 0.75rem;
 }
 
 .block {
@@ -1279,6 +1268,10 @@ button.active {
   height: 400px;
 }
 
+.h-\[40px\] {
+  height: 40px;
+}
+
 .h-\[500px\] {
   height: 500px;
 }
@@ -1307,14 +1300,6 @@ button.active {
   height: 100vh;
 }
 
-.h-\[\] {
-  height: ;
-}
-
-.h-\[40px\] {
-  height: 40px;
-}
-
 .w-\[100px\] {
   width: 100px;
 }
@@ -1339,6 +1324,10 @@ button.active {
   width: 347px;
 }
 
+.w-\[40px\] {
+  width: 40px;
+}
+
 .w-\[500px\] {
   width: 500px;
 }
@@ -1357,18 +1346,6 @@ button.active {
 
 .w-full {
   width: 100%;
-}
-
-.w-\[\] {
-  width: ;
-}
-
-.w-\[40\] {
-  width: 40;
-}
-
-.w-\[40px\] {
-  width: 40px;
 }
 
 .max-w-\[1300px\] {
@@ -1505,6 +1482,14 @@ button.active {
   overflow: hidden;
 }
 
+.overflow-x-hidden {
+  overflow-x: hidden;
+}
+
+.rounded {
+  border-radius: 0.25rem;
+}
+
 .rounded-2xl {
   border-radius: 1rem;
 }
@@ -1519,10 +1504,6 @@ button.active {
 
 .rounded-lg {
   border-radius: 0.5rem;
-}
-
-.rounded {
-  border-radius: 0.25rem;
 }
 
 .border {
@@ -1553,6 +1534,11 @@ button.active {
   background-color: rgb(9 20 26 / var(--tw-bg-opacity));
 }
 
+.bg-blueDark {
+  --tw-bg-opacity: 1;
+  background-color: rgb(7 30 50 / var(--tw-bg-opacity));
+}
+
 .bg-dark {
   --tw-bg-opacity: 1;
   background-color: rgb(9 20 26 / var(--tw-bg-opacity));
@@ -1571,11 +1557,6 @@ button.active {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
-}
-
-.bg-blueDark {
-  --tw-bg-opacity: 1;
-  background-color: rgb(7 30 50 / var(--tw-bg-opacity));
 }
 
 .bg-\[url\(\'img\/bannerBg\.png\'\)\] {
