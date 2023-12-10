@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./output.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900;9..40,1000&display=swap"
+      rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body>
+    <div class="topHeader py-6 bg-[#09141A] relative">
+      <div class="container">
+        <div class="displayWrapper flex justify-between items-center">
+          <div class="topHeaderLogo">
+            <img src="/dist/img/HorizontalLogo.png" alt="" />
+          </div>
+          <div class="topNav text-white uppercase">
+            <div class="toggle__menu">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="main__nav">
+              <ul class="flex gap-2">
+                <li class="active__link"><a href="#">Product</a></li>
+                <li><a href="#">Materials</a></li>
+                <li><a href="#">Process</a></li>
+                <li><a href="#">Partners</a></li>
+                <li><a href="#">VTPE TEAM</a></li>
+                <li><a href="#">Blogs</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Appointment</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      style="background-image: url('/dist/img/bannerImge.png')"
+      class="pageBanner text-white relative gradientHolderPrimary bg-no-repeat bg-cover">
+      <div class="container relative">
+        <div class="displayWrapper grid place-items-center h-[60vh]">
+          <div class="pageTitle leading-[1] z-10" data-aos="fade-up">
+            <span class="text-[30px] uppercase">Raw</span>
+            <h1 class="uppercase font-bold text-clamp">Materials</h1>
+          </div>
+          <p
+            class="relative z-10 font-light max-w-[1300px] w-full mx-auto"
+            data-aos="fade-up"
+            data-aos-delay="200">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quasi
+            perferendis cum delectus. Ex voluptatum veritatis tempore doloribus
+            nostrum, explicabo consequuntur numquam dignissimos ipsam distinctio
+            laboriosam excepturi dolor perferendis. Earum sit saepe id
+            doloribus, quibusdam repudiandae harum amet labore et debitis.
+            Nobis, necessitatibus aperiam id ipsa excepturi repellat iure
+            temporibus doloribus cupiditate placeat impedit facere culpa ut
+            velit vero iusto!
+          </p>
+          <div class="hidden md:block text-white absolute z-[50] -right-5">
+            <ul>
+              <li
+                class="w-[40px] h-[40px] mb-3 bg-blueDark grid place-content-center rounded">
+                <a class="" href=""><i class="fa-brands fa-facebook-f"></i></a>
+              </li>
+              <li
+                class="w-[40px] h-[40px] mb-3 bg-blueDark grid place-content-center rounded">
+                <a class="" href=""><i class="fa-brands fa-x-twitter"></i></a>
+              </li>
+              <li
+                class="w-[40px] h-[40px] mb-3 bg-blueDark grid place-content-center rounded">
+                <a class="" href=""><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li
+                class="w-[40px] h-[40px] mb-3 bg-blueDark grid place-content-center rounded">
+                <a class="" href=""><i class="fa-brands fa-linkedin-in"></i></a>
+              </li>
+              <li
+                class="w-[40px] h-[40px] mb-3 bg-blueDark grid place-content-center rounded">
+                <a class="" href=""><i class="fa-brands fa-youtube"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <section class="materials pt-10 mb-20">
+      <div class="container">
+        <div class="tab__link mb-20 md:flex md:gap-10" data-aos="fade-up">
+          <button
+            id="tab-1"
+            class="material-btn text-white block mb-5 py-2 uppercase text-2xl opacity-70 active">
+            Materials 1
+          </button>
+          <button
+            id="tab-2"
+            class="material-btn text-white block mb-5 py-2 uppercase text-2xl opacity-70">
+            Materials 2
+          </button>
+          <button
+            id="tab-3"
+            class="material-btn text-white block mb-5 py-2 uppercase text-2xl opacity-70">
+            Materials 3
+          </button>
+        </div>
+
+        <div class="material-content active" id="content-tab-1">
+          <div
+            class="material__main text-white md:grid md:grid-cols-2 md:gap-20">
+            <div class="material__content" data-aos="fade-right">
+              <h4>Material Lorem, ipsum dolor.</h4>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius
+                corporis, quas id eligendi, laudantium alias ducimus quidem
+                voluptas autem quisquam totam enim debitis dolore vero quaerat
+                error similique reprehenderit sint a voluptatibus? Aliquid
+                corporis dolores eligendi ullam labore incidunt praesentium?
+              </p>
+            </div>
+            <img
+              src="./img/bannerBg.png"
+              alt=""
+              class="w-[600px] h-[400px] object-cover"
+              data-aos="fade-left" />
+          </div>
+
+          <div class="material__subcontent mt-10 text-white" data-aos="fade-up">
+            <ul class="mb-10 grid gap-3 md:grid-cols-4">
+              <li>
+                <img
+                  src="./img/Screen-fill.png"
+                  alt=""
+                  class="w-[200px] h-[200px] object-cover mx-auto" />
+              </li>
+              <li>
+                <img
+                  src="./img/Screen-fill.png"
+                  alt=""
+                  class="w-[200px] h-[200px] object-cover mx-auto" />
+              </li>
+              <li>
+                <img
+                  src="./img/Screen-fill.png"
+                  alt=""
+                  class="w-[200px] h-[200px] object-cover mx-auto" />
+              </li>
+              <li>
+                <img
+                  src="./img/Screen-fill.png"
+                  alt=""
+                  class="w-[200px] h-[200px] object-cover mx-auto" />
+              </li>
+            </ul>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam
+              quis exercitationem delectus dolorem adipisci deserunt, inventore
+              quidem iusto illo? Quidem necessitatibus laudantium a? Iste labore
+              eligendi accusantium odit fuga eos laborum minima vel maiores
+              similique possimus aliquam mollitia tempora doloremque dolorem in,
+              tempore incidunt nihil consectetur sed beatae officia aspernatur
+              tenetur. Voluptas, est? Dolorum odit, quibusdam facere quasi
+              doloribus nostrum reiciendis itaque asperiores dolore nobis
+              praesentium fugit pariatur nihil quis ea minus voluptatum
+              voluptate deleniti corrupti tempore. Repellat culpa voluptatem ea
+              a, quis voluptate, aliquid deleniti odit, incidunt nobis excepturi
+              qui rem dolorem quo dolore voluptatibus vel harum sed accusantium
+              consequuntur? Incidunt, temporibus accusamus recusandae
+              asperiores. Reprehenderit officia sint animi ea porro nobis
+              inventore cum! Blanditiis ducimus asperiores eligendi
+              exercitationem? Ipsam tempora fuga, beatae deserunt iusto
+              provident minima quo, molestiae, autem magni obcaecati eum dolorem
+              enim sunt rerum doloribus. Doloribus, illo earum voluptates culpa,
+              porro nihil, quo distinctio in rem quaerat omnis vero ipsum
+              excepturi impedit! Earum ipsum magni, explicabo repellendus
+              molestiae similique veniam neque reprehenderit illo blanditiis
+              repellat sed.
+            </p>
+          </div>
+        </div>
+
+        <div class="material-content" id="content-tab-2">
+          <div class="material__main text-white mb-10">
+            <div class="grid md:gap-10 md:grid-cols-[.75fr_1fr]">
+              <img
+                src="./img/bannerBg.png"
+                alt=""
+                class="w-[600px] h-[400px] object-cover mb-10" />
+              <div>
+                <h4>Material 2</h4>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Quisquam fugit, asperiores voluptatem veniam, doloribus porro
+                  incidunt totam a omnis corporis exercitationem modi quaerat,
+                  inventore atque doloremque ipsum nemo explicabo ab!
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+                  perferendis in eos sed est quibusdam dolores perspiciatis
+                  reiciendis atque sapiente reprehenderit fuga accusantium nam,
+                  beatae quia labore odit alias? Quasi placeat odit provident
+                  aut, totam repellendus voluptate fuga, labore hic architecto
+                  laudantium at culpa nesciunt unde atque nisi quidem modi
+                  velit. Maiores id itaque quae corrupti quisquam explicabo,
+                  quibusdam voluptate! Cumque, eius corrupti atque minima aut
+                  rem autem in impedit.
+                </p>
+
+                <div class="grid gap-5 grid-auto-fit mt-10 md:!gap-0">
+                  <div
+                    class="text-center border border-white p-6 h-[150px] flex justify-center flex-col">
+                    <i class="fas fa-envelope text-2xl block mb-4"></i>
+                    <p class="text-sm mb-0">Lorem, ipsum dolor</p>
+                  </div>
+
+                  <div
+                    class="text-center border border-white p-6 h-[150px] flex justify-center flex-col">
+                    <i class="fas fa-envelope text-2xl block mb-4"></i>
+                    <p class="text-sm mb-0">Lorem, ipsum dolor</p>
+                  </div>
+
+                  <div
+                    class="text-center border border-white p-6 h-[150px] flex justify-center flex-col">
+                    <i class="fas fa-envelope text-2xl block mb-4"></i>
+                    <p class="text-sm mb-0">Lorem, ipsum dolor</p>
+                  </div>
+
+                  <div
+                    class="text-center border border-white p-6 h-[150px] flex justify-center flex-col">
+                    <i class="fas fa-envelope text-2xl block mb-4"></i>
+                    <p class="text-sm mb-0">Lorem, ipsum dolor</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="material__subcontent text-white mt-20 md:flex md:gap-10">
+            <h4>Lorem ipsum, dolor sit amet consectetur adipisicing.</h4>
+            <p class="max-w-[920px]">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam
+              tempore explicabo illum cupiditate obcaecati accusantium at
+              molestias molestiae ratione magnam? Perspiciatis, rem vero ex
+              officia voluptatibus, maiores laborum quae nulla quod in, at
+              aliquid doloremque? Error itaque officia commodi velit eum nobis
+              nisi in incidunt quaerat fugit laudantium placeat sint possimus
+              recusandae quas illo tempora fuga non temporibus, mollitia error,
+              eligendi est a illum.
+            </p>
+          </div>
+        </div>
+
+        <div class="material-content" id="content-tab-3">
+          <div class="material__main text-white mb-10">
+            <div class="grid md:gap-10 md:grid-cols-[1fr_.75fr]">
+              <img
+                src="./img/bannerBg.png"
+                alt=""
+                class="w-[600px] h-[400px] object-cover mb-10 md:order-2" />
+              <div class="md:order-1">
+                <h4>Material 3</h4>
+                <p>
+                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                  Quisquam fugit, asperiores voluptatem veniam, doloribus porro
+                  incidunt totam a omnis corporis exercitationem modi quaerat,
+                  inventore atque doloremque ipsum nemo explicabo ab!
+                </p>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem
+                  perferendis in eos sed est quibusdam dolores perspiciatis
+                  reiciendis atque sapiente reprehenderit fuga accusantium nam,
+                  beatae quia labore odit alias? Quasi placeat odit provident
+                  aut, totam repellendus voluptate fuga, labore hic architecto
+                  laudantium at culpa nesciunt unde atque nisi quidem modi
+                  velit. Maiores id itaque quae corrupti quisquam explicabo,
+                  quibusdam voluptate! Cumque, eius corrupti atque minima aut
+                  rem autem in impedit.
+                </p>
+
+                <div class="grid gap-5 grid-auto-fit mt-10 md:!gap-0">
+                  <div
+                    class="text-center border border-white p-6 h-[150px] flex justify-center flex-col">
+                    <i class="fas fa-envelope text-2xl block mb-4"></i>
+                    <p class="text-sm mb-0">Lorem, ipsum dolor</p>
+                  </div>
+
+                  <div
+                    class="text-center border border-white p-6 h-[150px] flex justify-center flex-col">
+                    <i class="fas fa-envelope text-2xl block mb-4"></i>
+                    <p class="text-sm mb-0">Lorem, ipsum dolor</p>
+                  </div>
+
+                  <div
+                    class="text-center border border-white p-6 h-[150px] flex justify-center flex-col">
+                    <i class="fas fa-envelope text-2xl block mb-4"></i>
+                    <p class="text-sm mb-0">Lorem, ipsum dolor</p>
+                  </div>
+
+                  <div
+                    class="text-center border border-white p-6 h-[150px] flex justify-center flex-col">
+                    <i class="fas fa-envelope text-2xl block mb-4"></i>
+                    <p class="text-sm mb-0">Lorem, ipsum dolor</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="material__subcontent mt-20 text-white md:flex md:gap-10">
+            <h4>Lorem ipsum, dolor sit amet consectetur adipisicing.</h4>
+            <p class="max-w-[920px]">
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam
+              tempore explicabo illum cupiditate obcaecati accusantium at
+              molestias molestiae ratione magnam? Perspiciatis, rem vero ex
+              officia voluptatibus, maiores laborum quae nulla quod in, at
+              aliquid doloremque? Error itaque officia commodi velit eum nobis
+              nisi in incidunt quaerat fugit laudantium placeat sint possimus
+              recusandae quas illo tempora fuga non temporibus, mollitia error,
+              eligendi est a illum.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="map relative">
+      <div class="container">
+        <div
+          class="map__blurb text-center bg-greenDark text-white px-3 py-8 md:p-10 translate-y-8">
+          <h4 data-aos="fade-up">Lorem, ipsum dolor</h4>
+          <p data-aos="fade-up" data-aos-delay="200">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga atque
+            delectus eum, a, eveniet aspernatur voluptas animi harum qui minima
+            aliquam, quasi ex! Dolore fugiat sequi velit aspernatur, est illo
+            repudiandae, aperiam adipisci, ex rerum minima unde cumque deserunt
+            facilis sunt ducimus nostrum consectetur laborum a iure non
+            molestiae exercitationem aut soluta. Veritatis perspiciatis
+            repudiandae quod, repellat dolorem sed dolores voluptas reiciendis,
+            optio blanditiis rerum obcaecati minima at error corrupti
+            perferendis ipsa fuga aliquid ratione aliquam et debitis? Quod,
+            veniam.
+          </p>
+        </div>
+      </div>
+
+      <div class="main__map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3870.372146568983!2d121.34546637509587!3d14.055188386369094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33bd5cd2d6006569%3A0x9075b8a72b9d5fb0!2sFrontline%20Business%20Solutions%2C%20Inc.!5e0!3m2!1sen!2sph!4v1702086093363!5m2!1sen!2sph"
+          width="100%"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <div class="map__contact py-16 text-white !bg-blueDark">
+          <div class="flex justify-center">
+            <div class="grid md:grid-cols-3 md:gap-[60px]" data-aos="fade-up">
+              <div class="map__item mb-8 md:mb-0">
+                <h5>Visit Us</h5>
+                <p>2007 Woodland Springs <br />Houston Tx 77077</p>
+              </div>
+
+              <div class="map__item mb-8 md:mb-0">
+                <h5>Contact Us</h5>
+                <ul>
+                  <li>Ph: +1 (281) 455-2323</li>
+                  <li>Ph: +1 (868) 368-1410</li>
+                  <li>contact@company.com</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          data-aos="fade-up"
+          data-aos-delay="1000"
+          class="map__form text-white max-w-[360px] rounded-3xl bg-dark p-8 border-1 w-full mx-auto static lg:absolute right-[calc((100vw-85vw)/2)] top-1/3">
+          <h4 class="mb-1">Contact Us</h4>
+          <p class="mb-8 opacity-70">We want to hear from you</p>
+          <form action="">
+            <input type="text" placeholder="Name" />
+            <input type="email" placeholder="Email" />
+            <textarea
+              name=""
+              id=""
+              placeholder="Please type your message here..."></textarea>
+            <input
+              type="submit"
+              value="Send Message"
+              class="bg-greenDark hover:bg-greenDarker" />
+          </form>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-dark p-3 text-center text-white">
+      <p>©TPE - Thermoplastic Elastomer 2023</p>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>

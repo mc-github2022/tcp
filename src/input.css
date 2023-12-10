@@ -11,7 +11,7 @@
   }
 
   h2 {
-    @apply text-[40px] mb-10 lg:w-[40%] font-bold;
+    @apply text-[40px] mb-10  font-bold;
   }
 
   h3 {
@@ -37,7 +37,7 @@
 
 @layer components {
   nav > ul li a {
-    @apply block py-4 pl-4 pr-16 z-10;
+    @apply block py-2 pl-2 pr-16 z-10;
   }
   nav ul li {
     @apply relative overflow-hidden rounded-tl-lg rounded-bl-lg;
@@ -354,9 +354,6 @@ body.open {
     height: unset;
   }
 
-  .main__nav ul {
-    flex-direction: row;
-  }
 
   
   .main__nav ul a {

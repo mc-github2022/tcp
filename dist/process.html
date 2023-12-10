@@ -9,6 +9,7 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900;9..40,1000&display=swap"
       rel="stylesheet"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <div class="topHeader py-6 bg-[#09141A] relative">
@@ -45,11 +46,15 @@
     >
       <div class="container relative">
         <div class="displayWrapper grid place-items-center h-[60vh]">
-          <div class="pageTitle leading-[1] z-10">
+          <div class="pageTitle leading-[1] z-10" data-aos="fade-up">
             <span class="text-[30px] uppercase">Our</span>
             <h1 class="uppercase font-bold text-clamp">Process</h1>
           </div>
-          <p class="relative z-10 font-light max-w-[1300px] w-full mx-auto">
+          <p
+            class="relative z-10 font-light max-w-[1300px] w-full mx-auto"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quasi
             perferendis cum delectus. Ex voluptatum veritatis tempore doloribus
             nostrum, explicabo consequuntur numquam dignissimos ipsam distinctio
@@ -59,13 +64,42 @@
             temporibus doloribus cupiditate placeat impedit facere culpa ut
             velit vero iusto!
           </p>
+          <div class="hidden md:block text-white absolute z-[50] -right-5">
+            <ul>
+              <li
+                class="w-[40px] h-[40px] mb-3 bg-blueDark grid place-content-center rounded"
+              >
+                <a class="" href=""><i class="fa-brands fa-facebook-f"></i></a>
+              </li>
+              <li
+                class="w-[40px] h-[40px] mb-3 bg-blueDark grid place-content-center rounded"
+              >
+                <a class="" href=""><i class="fa-brands fa-x-twitter"></i></a>
+              </li>
+              <li
+                class="w-[40px] h-[40px] mb-3 bg-blueDark grid place-content-center rounded"
+              >
+                <a class="" href=""><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li
+                class="w-[40px] h-[40px] mb-3 bg-blueDark grid place-content-center rounded"
+              >
+                <a class="" href=""><i class="fa-brands fa-linkedin-in"></i></a>
+              </li>
+              <li
+                class="w-[40px] h-[40px] mb-3 bg-blueDark grid place-content-center rounded"
+              >
+                <a class="" href=""><i class="fa-brands fa-youtube"></i></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
 
     <section class="process py-16 text-white">
       <div class="container">
-        <p>
+        <p data-aos="fade-up" data-aos-delay="300">
           Creating TPE (Thermoplastic Elastomer) pellets from used tires and
           industrial plastic crumbs involves several steps. Keep in mind that
           the process may vary depending on the specific equipment and
@@ -75,13 +109,19 @@
         <div class="process__item border-b border-white pb-10">
           <div class="grid">
             <h2
+              data-aos="fade-up"
+              data-aos-delay="200"
               class="clip"
               style="background-image: url('./img/BannerImge.png')"
             >
               01
             </h2>
 
-            <div class="process__content self-center max-w-[650px] w-full">
+            <div
+              class="process__content self-center max-w-[650px] w-full"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
               <h3>Manufacturing Process</h3>
               <span
                 class="w-[100px] h-[3px] bg-white block mb-5 -translate-y-6"
@@ -98,13 +138,19 @@
         <div class="process__item border-b border-white pb-10">
           <div class="grid">
             <h2
+              data-aos="fade-up"
+              data-aos-delay="200"
               class="clip"
               style="background-image: url('./img/BannerImge.png')"
             >
               01
             </h2>
 
-            <div class="process__content self-center max-w-[650px] w-full">
+            <div
+              class="process__content self-center max-w-[650px] w-full"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
               <h3>Manufacturing Process</h3>
               <span
                 class="w-[100px] h-[3px] bg-white block mb-5 -translate-y-6"
@@ -121,13 +167,19 @@
         <div class="process__item border-b border-white pb-10">
           <div class="grid">
             <h2
+              data-aos="fade-up"
+              data-aos-delay="200"
               class="clip"
               style="background-image: url('./img/BannerImge.png')"
             >
               01
             </h2>
 
-            <div class="process__content self-center max-w-[650px] w-full">
+            <div
+              class="process__content self-center max-w-[650px] w-full"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
               <h3>Manufacturing Process</h3>
               <span
                 class="w-[100px] h-[3px] bg-white block mb-5 -translate-y-6"
@@ -144,13 +196,48 @@
         <div class="process__item border-b border-white pb-10">
           <div class="grid">
             <h2
+              data-aos="fade-up"
+              data-aos-delay="200"
               class="clip"
               style="background-image: url('./img/BannerImge.png')"
             >
               01
             </h2>
 
-            <div class="process__content self-center max-w-[650px] w-full">
+            <div
+              class="process__content self-center max-w-[650px] w-full"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
+              <h3>Manufacturing Process</h3>
+              <span
+                class="w-[100px] h-[3px] bg-white block mb-5 -translate-y-6"
+              ></span>
+              <p>
+                Gather used tires and industrial plastic crumbs. Ensure that the
+                materials are sorted to remove any contaminants like metal or
+                other non-plastic materials.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="process__item border-b border-white pb-10">
+          <div class="grid">
+            <h2
+              data-aos="fade-up"
+              data-aos-delay="200"
+              class="clip"
+              style="background-image: url('./img/BannerImge.png')"
+            >
+              01
+            </h2>
+
+            <div
+              class="process__content self-center max-w-[650px] w-full"
+              data-aos="fade-up"
+              data-aos-delay="400"
+            >
               <h3>Manufacturing Process</h3>
               <span
                 class="w-[100px] h-[3px] bg-white block mb-5 -translate-y-6"
@@ -197,8 +284,8 @@
         <div
           class="map__blurb text-center bg-greenDark text-white px-3 py-8 md:p-10 translate-y-8"
         >
-          <h4>Lorem, ipsum dolor</h4>
-          <p>
+          <h4 data-aos="fade-up">Lorem, ipsum dolor</h4>
+          <p data-aos="fade-up" data-aos-delay="200">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga atque
             delectus eum, a, eveniet aspernatur voluptas animi harum qui minima
             aliquam, quasi ex! Dolore fugiat sequi velit aspernatur, est illo
@@ -226,7 +313,7 @@
 
         <div class="map__contact py-16 text-white !bg-blueDark">
           <div class="flex justify-center">
-            <div class="grid md:grid-cols-3 md:gap-[60px]">
+            <div class="grid md:grid-cols-3 md:gap-[60px]" data-aos="fade-up">
               <div class="map__item mb-8 md:mb-0">
                 <h5>Visit Us</h5>
                 <p>2007 Woodland Springs <br />Houston Tx 77077</p>
@@ -245,7 +332,9 @@
         </div>
 
         <div
-          class="map__form text-white max-w-[360px] rounded-3xl bg-dark p-8 border-1 w-full mx-auto static lg:absolute right-[calc((100vw-1480px)/2)] top-1/3"
+          data-aos="fade-up"
+          data-aos-delay="1000"
+          class="map__form text-white max-w-[360px] rounded-3xl bg-dark p-8 border-1 w-full mx-auto static lg:absolute right-[calc((100vw-85vw)/2)] top-1/3"
         >
           <h4 class="mb-1">Contact Us</h4>
           <p class="mb-8 opacity-70">We want to hear from you</p>
@@ -269,6 +358,8 @@
     <footer class="bg-dark p-3 text-center text-white">
       <p>©TPE - Thermoplastic Elastomer 2023</p>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script src="script.js"></script>
   </body>
 </html>

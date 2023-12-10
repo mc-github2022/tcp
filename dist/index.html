@@ -9,31 +9,29 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900;9..40,1000&display=swap"
-      rel="stylesheet"
-    />
+      rel="stylesheet" />
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-    />
-    <script
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+    <!-- <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
       integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    ></script>
+    ></script> -->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
-    <div class="main">
+    <div class="main overflow-x-hidden">
       <div
-        class="sideNav z-[9999] bg-gradient-to-t from-primary/[0.5] absolute -left-[100%] lg:left-[0] w-[230px] h-screen lg:fixed transition-all duration-75"
-      >
+        class="sideNav z-[9999] bg-gradient-to-t from-primary/[0.5] absolute -left-[100%] lg:left-[0] w-[230px] h-screen lg:fixed transition-all duration-75">
         <div class="theLogo h-[27.3vh] flex justify-center p-4">
           <div>
             <img
               class="h-[95px] w-[90] m-auto"
               src="./img/TPELogo.png"
-              alt=""
-            />
+              alt="" />
             <!-- <h2 class="text-center text-white font-semibold">
               Thermoplastic <br />
               Elastomer
@@ -43,25 +41,25 @@
         <nav class="nav h-[39.3vh] flex justify-end">
           <ul id="mainNav" class="text-white">
             <li class="product active">
-              <a href="#product"><p>PRODUCT</p></a>
+              <a href="#product"><p class="mb-0">PRODUCT</p></a>
             </li>
             <li class="materials">
-              <a href="#materials"><p>MATERIALS</p></a>
+              <a href="#materials"><p class="mb-0">MATERIALS</p></a>
             </li>
             <li class="process">
-              <a href="#process"><p>PROCESS</p></a>
+              <a href="#process"><p class="mb-0">PROCESS</p></a>
             </li>
             <li class="partners">
-              <a href="#partners"><p>PARTNERS</p></a>
+              <a href="#partners"><p class="mb-0">PARTNERS</p></a>
             </li>
             <li class="theTeam">
-              <a href="#theTeam"><p>NVTPE TEAM</p></a>
+              <a href="#theTeam"><p class="mb-0">NVTPE TEAM</p></a>
             </li>
             <li class="blogs">
-              <a href="#blogs"><p>BLOGS</p></a>
+              <a href="#blogs"><p class="mb-0">BLOGS</p></a>
             </li>
             <li class="contactUs">
-              <a href="#contactUs"><p>CONTACT US</p></a>
+              <a href="#contactUs"><p class="mb-0">CONTACT US</p></a>
             </li>
           </ul>
         </nav>
@@ -87,8 +85,7 @@
         </div>
       </div>
       <section
-        class="banner bg-[url('img/bannerBg.png')] bg-no-repeat bg-cover w-full h-screen snap-center"
-      >
+        class="banner bg-[url('img/bannerBg.png')] bg-no-repeat bg-cover w-full h-screen snap-center">
         <div class="contentContainer px-8">
           <div class="toggleMenu z-[99999]">
             <span></span>
@@ -97,25 +94,30 @@
           </div>
           <div class="gradientHolder h-screen flex items-end">
             <div class="bannerTitle relative z-10 text-white mb-20">
-              <h1 class="text-[50px] text-white mb-8 leading-[1]">
+              <h1
+                class="text-[50px] text-white mb-8 leading-[1]"
+                data-aos="fade-up">
                 Lorem ipsum dolor sit <br />
                 amet.
               </h1>
-              <p class="mb-8">
+              <p class="mb-8" data-aos="fade-up" data-aos-delay="200">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
                 Beatae debitis dolorum nesciunt impedit unde aliquid eaque
                 officiis? Tenetur!
               </p>
-              <div class="bannerAction flex gap-4">
+              <div
+                class="bannerAction flex gap-4 items-center"
+                data-aos="fade-up"
+                data-aos-delay="400">
                 <a
                   href="#"
                   class="btn bg-primary btn-hover relative overflow-hidden"
-                  ><p>Get Started</p></a
+                  ><p class="mb-0">Get Started</p></a
                 >
                 <a
                   href="#"
                   class="btn border border-white btn-hover relative overflow-hidden hover:border-[#071e32] transition-all duration-500"
-                  ><p>Talk to us</p></a
+                  ><p class="mb-0">Talk to us</p></a
                 >
               </div>
             </div>
@@ -124,15 +126,15 @@
       </section>
       <section
         id="product"
-        class="product 2xl:h-screen py-10 snap-center relative"
-      >
+        class="product 2xl:h-screen py-10 snap-center relative">
         <div class="contentContainer px-8">
           <div
-            class="ourProducts grid grid-cols-1 2xl:grid-cols-[1fr,2fr] gap-10 mb-20"
-          >
+            class="ourProducts grid grid-cols-1 2xl:grid-cols-[1fr,2fr] gap-10 mb-20">
             <div>
-              <h2 class="text-[40px] text-white mb-10">Our Product</h2>
-              <p class="text-white">
+              <h2 class="text-[40px] text-white mb-10" data-aos="fade-right">
+                Our Product
+              </h2>
+              <p class="text-white" data-aos="fade-right">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 Officiis aliquam consequuntur quam, numquam quibusdam vero!
               </p>
@@ -142,17 +144,20 @@
                 class="mb-5 md:mb-0 mx-auto md:mx-0 w-[167px] h-[156px] lg:w-[217px] lg:h-[206px]"
                 src="./img/product.png"
                 alt=""
-              />
+                data-aos="fade-right"
+                data-aos-delay="100" />
               <img
                 class="mb-5 md:mb-0 mx-auto md:mx-0 w-[167px] h-[156px] lg:w-[217px] lg:h-[206px]"
                 src="./img/product-2.png"
                 alt=""
-              />
+                data-aos="fade-right"
+                data-aos-delay="200" />
               <img
                 class="mb-5 md:mb-0 mx-auto md:mx-0 w-[167px] h-[156px] lg:w-[217px] lg:h-[206px]"
                 src="./img/product-3.png"
                 alt=""
-              />
+                data-aos="fade-right"
+                data-aos-delay="300" />
             </div>
           </div>
           <div class="productPost text-white grid lg:grid-cols-[1.5fr,2fr]">
@@ -160,10 +165,12 @@
               src="./img/Screen-fill.png"
               alt=""
               class="sideBg mx-auto lg:absolute w-auto mb-10 right-0 lg:w-[50%] object-cover h-[500px]"
-            />
+              data-aos="fade-right" />
             <div>
-              <h2 class="text-[50px] mb-10">Lorem ipsum dolor sit amet.</h2>
-              <div class="desc">
+              <h2 class="text-[50px] mb-10" data-aos="fade-up">
+                Lorem ipsum dolor sit amet.
+              </h2>
+              <div class="desc" data-aos="fade-up" data-aos-delay="200">
                 <p class="mb-10">
                   Lorem, ipsum dolor sit amet consectetur adipisicing elit.
                   Praesentium unde quaerat numquam, cum nobis error commodi.
@@ -179,20 +186,24 @@
                   tempore mollitia porro rerum nobis! Beatae, maiores cumque
                   provident mollitia nemo aperiam.
                 </p>
+                <a href="#">Learn More</a>
               </div>
-              <a href="#">Learn More</a>
             </div>
           </div>
         </div>
       </section>
       <section
         id="materials"
-        class="materials py-10 2xl:h-screen snap-center text-white"
-      >
+        class="materials py-10 2xl:h-screen snap-center text-white">
         <div class="contentContainer px-8">
-          <h2 class="text-[40px] text-white mb-10">Raw Materials</h2>
+          <h2 class="text-[40px] text-white mb-10" data-aos="fade-up">
+            Raw Materials
+          </h2>
           <div class="gridMaterial grid lg:grid-cols-3 mb-10 gap-10">
-            <div class="materialItem mb-10">
+            <div
+              class="materialItem mb-10"
+              data-aos="fade-up"
+              data-aos-delay="100">
               <img src="" alt="" />
               <h2 class="text-2xl mb-2">Materials 1</h2>
               <small>
@@ -202,7 +213,10 @@
                 dignissimos cupiditate, doloribus inventore.
               </small>
             </div>
-            <div class="materialItem mb-10">
+            <div
+              class="materialItem mb-10"
+              data-aos="fade-up"
+              data-aos-delay="200">
               <img src="" alt="" />
               <h2 class="text-2xl mb-2">Materials 2</h2>
               <small>
@@ -212,7 +226,10 @@
                 dignissimos cupiditate, doloribus inventore.
               </small>
             </div>
-            <div class="materialItem mb-10">
+            <div
+              class="materialItem mb-10"
+              data-aos="fade-up"
+              data-aos-delay="300">
               <img src="" alt="" />
               <h2 class="text-2xl mb-2">Materials 3</h2>
               <small>
@@ -227,20 +244,27 @@
             class="w-full h-[60vh] object-cover rounded-lg"
             src="./img/Container.png"
             alt=""
-          />
+            data-aos="fade-up"
+            data-aos-delay="400" />
         </div>
       </section>
       <section
         id="process"
-        class="process text-white 2xl:h-screen snap-center py-10"
-      >
+        class="process text-white 2xl:h-screen snap-center py-10">
         <div class="contentContainer px-8">
           <div>
-            <h2 class="text-[40px] text-white mb-10">Manufacturing Process</h2>
+            <h2 class="text-[40px] text-white mb-10" data-aos="fade-up">
+              Manufacturing Process
+            </h2>
             <div class="grid md:grid-cols-2 gap-10">
-              <img class="w-full" src="./img/Video Placeholder.png" alt="" />
+              <img
+                class="w-full"
+                src="./img/Video Placeholder.png"
+                alt=""
+                data-aos="fade-up"
+                data-aos-delay="100" />
               <div>
-                <p class="mb-10">
+                <p class="mb-10" data-aos="fade-up" data-aos-delay="100">
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Illum nostrum, inventore doloremque dolorem harum sapiente,
                   aut facere officia ratione debitis quibusdam! Totam incidunt
@@ -253,7 +277,7 @@
                   placeat ad reprehenderit. Ipsa, ad qui. Consequatur
                   perferendis eveniet dolorem ipsam?
                 </p>
-                <div class="mb-10">
+                <div class="mb-10" data-aos="fade-up" data-aos-delay="200">
                   <h2 class="text-[40px] text-white mb-10">Feature one</h2>
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -263,7 +287,7 @@
                     error nisi!
                   </p>
                 </div>
-                <div class="mb-10">
+                <div class="mb-10" data-aos="fade-up" data-aos-delay="300">
                   <h2 class="text-[40px] text-white mb-10">Feature one</h2>
                   <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -279,27 +303,40 @@
       </section>
       <section
         id="partners"
-        class="partners text-white 2xl:h-screen snap-center py-10"
-      >
+        class="partners text-white 2xl:h-screen snap-center py-10">
         <div class="contentContainer px-8 items-center">
-          <h2 class="text-[40px] lg:mt-[13vh]">
+          <h2 class="text-[40px] lg:mt-[13vh]" data-aos="fade-up">
             Trusted by 10,000+ <br />companies around the world
           </h2>
-          <p class="lg:w-[30%] mb-20">
+          <p class="lg:w-[30%] mb-20" data-aos="fade-up" data-aos-delay="100">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi est
             at exercitationem ad beatae tempore corporis. Voluptatibus, fuga
             sint? Consequuntur qui quas possimus a aperiam quo ab quis ducimus
             et.
           </p>
           <ul class="grid grid-cols-4 gap-10">
-            <li><img src="./img/facebook.png" alt="" /></li>
-            <li><img src="./img/google.png" alt="" /></li>
-            <li><img src="./img/youtube.png" alt="" /></li>
-            <li><img src="./img/pinterest.png" alt="" /></li>
-            <li><img class="ml-auto" src="./img/youtube.png" alt="" /></li>
-            <li><img class="ml-auto" src="./img/google.png" alt="" /></li>
-            <li><img class="ml-auto" src="./img/google.png" alt="" /></li>
-            <li>
+            <li data-aos="fade-left" data-aos-delay="100">
+              <img src="./img/facebook.png" alt="" />
+            </li>
+            <li data-aos="fade-left" data-aos-delay="200">
+              <img src="./img/google.png" alt="" />
+            </li>
+            <li data-aos="fade-left" data-aos-delay="300">
+              <img src="./img/youtube.png" alt="" />
+            </li>
+            <li data-aos="fade-left" data-aos-delay="400">
+              <img src="./img/pinterest.png" alt="" />
+            </li>
+            <li data-aos="fade-left" data-aos-delay="500">
+              <img class="ml-auto" src="./img/youtube.png" alt="" />
+            </li>
+            <li data-aos="fade-left" data-aos-delay="600">
+              <img class="ml-auto" src="./img/google.png" alt="" />
+            </li>
+            <li data-aos="fade-left" data-aos-delay="700">
+              <img class="ml-auto" src="./img/google.png" alt="" />
+            </li>
+            <li data-aos="fade-left" data-aos-delay="800">
               <img class="ml-auto" src="./img/pinterest.png" alt="" />
             </li>
           </ul>
@@ -307,77 +344,90 @@
       </section>
       <section
         id="theTeam"
-        class="theTeam text-white 2xl:h-screen snap-center py-10"
-      >
+        class="theTeam text-white 2xl:h-screen snap-center py-10">
         <div class="contentContainer px-8 items-center">
-          <h2 class="text-[40px] text-white">Meet our team members</h2>
-          <p class="lg:w-[50%] mb-5">
+          <h2 class="text-[40px] text-white" data-aos="fade-up">
+            Meet our team members
+          </h2>
+          <p class="lg:w-[50%] mb-5" data-aos="fade-up" data-aos-delay="100">
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Consequuntur veniam facilis numquam adipisci tempore natus provident
             sed vero quo sint!
           </p>
           <div class="md:flex md:flex-wrap gap-4">
-            <div class="theTeamCard group mb-5 md:mb-0">
+            <div
+              class="theTeamCard group mb-5 md:mb-0"
+              data-aos="fade-up"
+              data-aos-delay="100">
               <img
                 class="mx-auto grayscale group-hover:grayscale-0 transition-all duration-500 rounded-lg w-[330px] h-[330px]"
                 src="./img/theTeam.png"
-                alt=""
-              />
+                alt="" />
               <div class="teamName text-center">
                 <p class="text-lg">TEAM NAME</p>
                 <p>TEAM Role</p>
               </div>
             </div>
-            <div class="theTeamCard group mb-5 md:mb-0">
+            <div
+              class="theTeamCard group mb-5 md:mb-0"
+              data-aos="fade-up"
+              data-aos-delay="200">
               <img
                 class="mx-auto grayscale group-hover:grayscale-0 transition-all duration-500 rounded-lg w-[330px] h-[330px]"
                 src="./img/theTeam.png"
-                alt=""
-              />
+                alt="" />
               <div class="teamName text-center">
                 <p class="text-lg">TEAM NAME</p>
                 <p>TEAM Role</p>
               </div>
             </div>
-            <div class="theTeamCard group mb-5 md:mb-0">
+            <div
+              class="theTeamCard group mb-5 md:mb-0"
+              data-aos="fade-up"
+              data-aos-delay="300">
               <img
                 class="mx-auto grayscale group-hover:grayscale-0 transition-all duration-500 rounded-lg w-[330px] h-[330px]"
                 src="./img/theTeam.png"
-                alt=""
-              />
+                alt="" />
               <div class="teamName text-center">
                 <p class="text-lg">TEAM NAME</p>
                 <p>TEAM Role</p>
               </div>
             </div>
-            <div class="theTeamCard group mb-5 md:mb-0">
+            <div
+              class="theTeamCard group mb-5 md:mb-0"
+              data-aos="fade-up"
+              data-aos-delay="400">
               <img
                 class="mx-auto grayscale group-hover:grayscale-0 transition-all duration-500 rounded-lg w-[330px] h-[330px]"
                 src="./img/theTeam.png"
-                alt=""
-              />
+                alt="" />
               <div class="teamName text-center">
                 <p class="text-lg">TEAM NAME</p>
                 <p>TEAM Role</p>
               </div>
             </div>
-            <div class="theTeamCard group mb-5 md:mb-0">
+            <div
+              class="theTeamCard group mb-5 md:mb-0"
+              data-aos="fade-up"
+              data-aos-delay="500">
               <img
                 class="mx-auto grayscale group-hover:grayscale-0 transition-all duration-500 rounded-lg w-[330px] h-[330px]"
                 src="./img/theTeam.png"
-                alt=""
-              />
+                alt="" />
               <div class="teamName text-center">
                 <p class="text-lg">TEAM NAME</p>
                 <p>TEAM Role</p>
               </div>
             </div>
-            <div class="theTeamCard group mb-5 md:mb-0">
+            <div
+              class="theTeamCard group mb-5 md:mb-0"
+              data-aos="fade-up"
+              data-aos-delay="600">
               <img
                 class="mx-auto grayscale group-hover:grayscale-0 transition-all duration-500 rounded-lg w-[330px] h-[330px]"
                 src="./img/theTeam.png"
-                alt=""
-              />
+                alt="" />
               <div class="teamName text-center">
                 <p class="text-lg">TEAM NAME</p>
                 <p>TEAM Role</p>
@@ -388,24 +438,25 @@
       </section>
       <section
         id="blogs"
-        class="blogs text-white 2xl:h-screen snap-center py-10"
-      >
+        class="blogs text-white 2xl:h-screen snap-center py-10">
         <div class="contentContainer px-8 items-center">
-          <h2 class="text-[40px] text-white">Latest Happenings</h2>
-          <p class="md:w-[50%] mb-5">
+          <h2 class="text-[40px] text-white" data-aos="fade-up">
+            Latest Happenings
+          </h2>
+          <p class="md:w-[50%] mb-5" data-aos="fade-up" data-aos-delay="100">
             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corporis
             explicabo ex esse pariatur? Debitis quia commodi perferendis,
             exercitationem facilis deserunt!
           </p>
           <div class="wrapper grid md:grid-cols-2 lg:grid-cols-3 gap-5">
             <div
+              data-aos="fade-up"
+              data-aos-delay="300"
               style="background-size: contain; background-repeat: no-repeat"
-              class="blogPostItem group h-[70vh] overflow-hidden hover:outline hover:outline-white relative"
-            >
+              class="blogPostItem group h-[70vh] overflow-hidden hover:outline hover:outline-white relative">
               <div
                 class="blogPostBg group-hover:gradientHolder absolute top-0 left-0 w-full h-[70%] transition-all group-hover:h-[100%] bg-no-repeat bg-cover bg-center"
-                style="background-image: url('./img/blogPost-2.png')"
-              ></div>
+                style="background-image: url('./img/blogPost-2.png')"></div>
               <div class="p-4 absolute bottom-0 bg-dark group-hover:bg-[unset]">
                 <h2 class="text-2xl mb-5">Title Header</h2>
                 <p class="mb-5">
@@ -427,13 +478,13 @@
               </div>
             </div>
             <div
+              data-aos="fade-up"
+              data-aos-delay="400"
               style="background-size: contain; background-repeat: no-repeat"
-              class="blogPostItem group h-[70vh] overflow-hidden hover:outline hover:outline-white relative"
-            >
+              class="blogPostItem group h-[70vh] overflow-hidden hover:outline hover:outline-white relative">
               <div
                 class="blogPostBg group-hover:gradientHolder absolute top-0 left-0 w-full h-[70%] transition-all group-hover:h-[100%] bg-no-repeat bg-cover bg-center"
-                style="background-image: url('./img/blogPost-1.png')"
-              ></div>
+                style="background-image: url('./img/blogPost-1.png')"></div>
               <div class="p-4 absolute bottom-0 bg-dark group-hover:bg-[unset]">
                 <h2 class="text-2xl mb-5">Title Header</h2>
                 <p class="mb-5">
@@ -459,12 +510,11 @@
       </section>
       <section
         id="contactUs"
-        class="contanctUs text-white bg-[#071E32] 2xl:h-screen snap-center"
-      >
+        class="contanctUs text-white bg-[#071E32] 2xl:h-screen snap-center">
         <div class="contentContainer items-center">
           <div
-            class="form p-10 bg-dark bottom-[20%] w-full md:w-[400px] mt-20 mx-auto rounded-2xl lg:absolute lg:right-[10%] 2xl:right-[20%]"
-          >
+            data-aos="fade-up"
+            class="form p-10 bg-dark bottom-[20%] w-full md:w-[400px] mt-20 mx-auto rounded-2xl lg:absolute lg:right-[10%] 2xl:right-[20%]">
             <h2 class="text-2xl">Contact us</h2>
             <p class="mb-10">We want to hear from you</p>
             <div class="inputGroup">
@@ -473,8 +523,7 @@
                 type="text"
                 placeholder="Name"
                 name=""
-                id=""
-              />
+                id="" />
             </div>
             <div class="inputGroup">
               <input
@@ -482,8 +531,7 @@
                 type="email"
                 placeholder="Email"
                 name=""
-                id=""
-              />
+                id="" />
             </div>
             <div class="inputGroup mb-5">
               <textarea
@@ -491,45 +539,48 @@
                 name=""
                 id=""
                 cols="30"
-                rows="10"
-              ></textarea>
+                rows="10"></textarea>
             </div>
             <input
               class="bg-primary p-2 w-full rounded-2xl"
               type="submit"
-              value="Send Message"
-            />
+              value="Send Message" />
           </div>
           <iframe
             class="h-[70vh]"
             style="width: 100%; border: 0"
             frameborder="0"
-            src="https://www.google.com/maps/embed/v1/place?q=San+Pablo+City,+Laguna,+Philippines&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"
-          ></iframe>
+            src="https://www.google.com/maps/embed/v1/place?q=San+Pablo+City,+Laguna,+Philippines&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
           <div class="contactInfo md:flex gap-5 px-8 py-8 lg:h-[20vh]">
-            <div class="visitUS text-sm mb-5 md:mb-0">
+            <div
+              class="visitUS text-sm mb-5 md:mb-0"
+              data-aos="fade-up"
+              data-aos-delay="200">
               <h2 class="text-lg mb-5">Visit Us</h2>
               <p>
                 2007 Woodland Springs <br />
                 Houston Tx 77077
               </p>
             </div>
-            <div class="contactNumber text-sm">
+            <div
+              class="contactNumber text-sm leading-[1]"
+              data-aos="fade-up"
+              data-aos-delay="300">
               <h2 class="text-lg mb-5">Contact Us</h2>
-              <p>Ph: +1(281) 455-2323</p>
-              <p>+1 (868) 368-1410</p>
+              <p class="mb-0">Ph: +1(281) 455-2323</p>
+              <p class="mb-0">+1 (868) 368-1410</p>
               <p>contact@company.com</p>
             </div>
           </div>
           <div
-            class="copyRight flex justify-center items-center bg-dark h-[10vh]"
-          >
+            class="copyRight flex justify-center items-center bg-dark h-[10vh]">
             <small>©TPE - Thermoplastic Elastomer 2023</small>
           </div>
         </div>
       </section>
     </div>
   </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     const toggleMenu = document.querySelector(".toggleMenu");
     const sideNav = document.querySelector(".sideNav");
@@ -537,6 +588,21 @@
     toggleMenu.addEventListener("click", () => {
       sideNav.classList.toggle("open");
       toggleMenu.classList.toggle("open");
+    });
+    AOS.init();
+
+    const aosAnimation = document.querySelectorAll("[data-aos]");
+    observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.intersectionRatio > 0) {
+          entry.target.classList.add("aos-animate");
+        } else {
+          entry.target.classList.remove("aos-animate");
+        }
+      });
+    });
+    aosAnimation.forEach((aosObject) => {
+      observer.observe(aosObject);
     });
   </script>
 </html>

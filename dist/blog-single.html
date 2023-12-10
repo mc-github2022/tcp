@@ -13,6 +13,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <div class="topHeader py-6 bg-[#09141A] relative">
@@ -49,11 +50,15 @@
     >
       <div class="container relative">
         <div class="displayWrapper grid place-items-center h-[60vh]">
-          <div class="pageTitle leading-[1] z-10">
+          <div class="pageTitle leading-[1] z-10" data-aos="fade-up">
             <span class="text-[30px] uppercase">Latest</span>
             <h1 class="uppercase font-bold text-clamp">Blogs</h1>
           </div>
-          <p class="relative z-10 font-light max-w-[1300px] w-full mx-auto">
+          <p
+            class="relative z-10 font-light max-w-[1300px] w-full mx-auto"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quasi
             perferendis cum delectus. Ex voluptatum veritatis tempore doloribus
             nostrum, explicabo consequuntur numquam dignissimos ipsam distinctio
@@ -63,6 +68,35 @@
             temporibus doloribus cupiditate placeat impedit facere culpa ut
             velit vero iusto!
           </p>
+          <div class="hidden md:block text-white absolute z-[50] -right-5">
+            <ul>
+              <li
+                class="w-[40px] h-[40px] mb-3 bg-blueDark grid place-content-center rounded"
+              >
+                <a class="" href=""><i class="fa-brands fa-facebook-f"></i></a>
+              </li>
+              <li
+                class="w-[40px] h-[40px] mb-3 bg-blueDark grid place-content-center rounded"
+              >
+                <a class="" href=""><i class="fa-brands fa-x-twitter"></i></a>
+              </li>
+              <li
+                class="w-[40px] h-[40px] mb-3 bg-blueDark grid place-content-center rounded"
+              >
+                <a class="" href=""><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li
+                class="w-[40px] h-[40px] mb-3 bg-blueDark grid place-content-center rounded"
+              >
+                <a class="" href=""><i class="fa-brands fa-linkedin-in"></i></a>
+              </li>
+              <li
+                class="w-[40px] h-[40px] mb-3 bg-blueDark grid place-content-center rounded"
+              >
+                <a class="" href=""><i class="fa-brands fa-youtube"></i></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -70,12 +104,13 @@
     <section class="article py-20 mb-20">
       <div class="container">
         <h3
+          data-aos="fade-right"
           class="article__header relative text-white max-w-[630px] z-30 ml-0 md:ml-24 pt-14"
         >
           Lorem ipsum dolor sit amet consectetur adipisicing elit.
         </h3>
 
-        <div class="article__body">
+        <div class="article__body" data-aos="fade-up" data-aos-delay="200">
           <p>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus
             assumenda delectus deleniti omnis, eaque non! Aspernatur eveniet
@@ -182,7 +217,11 @@
     <section class="article__related relative">
       <div class="container">
         <div class="blog__list my-14 grid lg:grid-cols-3 md:gap-10">
-          <a href="#" class="blog__card text-white block mb-10">
+          <a
+            href="#"
+            class="blog__card text-white block mb-10"
+            data-aos="fade-up"
+          >
             <img
               src="./img/BannerImge.png"
               alt=""
@@ -205,7 +244,12 @@
             </ul>
           </a>
 
-          <a href="#" class="blog__card text-white block mb-10">
+          <a
+            href="#"
+            class="blog__card text-white block mb-10"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             <img
               src="./img/BannerImge.png"
               alt=""
@@ -228,7 +272,11 @@
             </ul>
           </a>
 
-          <div class="recent text-white mt-10 md:mt-0 md:-translate-y-20">
+          <div
+            class="recent text-white mt-10 md:mt-0 md:-translate-y-20"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
             <h4 class="mb-10">Recent Article</h4>
 
             <a href="#" class="flex gap-5 items-center mb-10">
@@ -274,14 +322,13 @@
         </div>
       </div>
     </section>
-
-    <section class="map relative mt-10">
+    <section class="map relative">
       <div class="container">
         <div
           class="map__blurb text-center bg-greenDark text-white px-3 py-8 md:p-10 translate-y-8"
         >
-          <h4>Lorem, ipsum dolor</h4>
-          <p>
+          <h4 data-aos="fade-up">Lorem, ipsum dolor</h4>
+          <p data-aos="fade-up" data-aos-delay="200">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga atque
             delectus eum, a, eveniet aspernatur voluptas animi harum qui minima
             aliquam, quasi ex! Dolore fugiat sequi velit aspernatur, est illo
@@ -309,7 +356,7 @@
 
         <div class="map__contact py-16 text-white !bg-blueDark">
           <div class="flex justify-center">
-            <div class="grid md:grid-cols-3 md:gap-[60px]">
+            <div class="grid md:grid-cols-3 md:gap-[60px]" data-aos="fade-up">
               <div class="map__item mb-8 md:mb-0">
                 <h5>Visit Us</h5>
                 <p>2007 Woodland Springs <br />Houston Tx 77077</p>
@@ -328,7 +375,9 @@
         </div>
 
         <div
-          class="map__form text-white max-w-[360px] rounded-3xl bg-dark p-8 border-1 w-full mx-auto static lg:absolute right-[calc((100vw-1480px)/2)] top-1/3"
+          data-aos="fade-up"
+          data-aos-delay="1000"
+          class="map__form text-white max-w-[360px] rounded-3xl bg-dark p-8 border-1 w-full mx-auto static lg:absolute right-[calc((100vw-85vw)/2)] top-1/3"
         >
           <h4 class="mb-1">Contact Us</h4>
           <p class="mb-8 opacity-70">We want to hear from you</p>
@@ -352,6 +401,8 @@
     <footer class="bg-dark p-3 text-center text-white">
       <p>©TPE - Thermoplastic Elastomer 2023</p>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script src="script.js"></script>
   </body>
 </html>
