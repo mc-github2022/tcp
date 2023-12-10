@@ -26,6 +26,9 @@ module.exports = {
       fontSize: {
         clamp: "clamp(60px, 10vw, 120px)",
       },
+      gridTemplateColumns: {
+        autofit: "repeat(auto-fit, minmax(150px,1fr))",
+      },
     },
   },
   plugins: [],

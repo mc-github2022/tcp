@@ -7,7 +7,7 @@
     @apply !scroll-smooth;
   }
   body {
-    @apply bg-dark font-dmSans;
+    @apply bg-dark font-dmSans overflow-x-hidden;
   }
 
   h2 {
@@ -186,6 +186,17 @@
 
   .article__body {
     @apply text-white mt-28 md:columns-2 md:gap-10;
+  }
+
+  .material-btn.active {
+    @apply opacity-100;
+  }
+
+  .material-content {
+    @apply hidden;
+  }
+  .material-content.active {
+    @apply block;
   }
 }
 nav ul li a::before {

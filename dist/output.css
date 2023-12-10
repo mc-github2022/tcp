@@ -439,6 +439,7 @@ html {
 }
 
 body {
+  overflow-x: hidden;
   --tw-bg-opacity: 1;
   background-color: rgb(9 20 26 / var(--tw-bg-opacity));
   font-family: DM Sans;
@@ -1027,6 +1028,18 @@ nav > ul li a p {
   }
 }
 
+.material-btn.active {
+  opacity: 1;
+}
+
+.material-content {
+  display: none;
+}
+
+.material-content.active {
+  display: block;
+}
+
 .static {
   position: static;
 }
@@ -1043,10 +1056,6 @@ nav > ul li a p {
   left: -100%;
 }
 
-.-right-5 {
-  right: -1.25rem;
-}
-
 .bottom-0 {
   bottom: 0px;
 }
@@ -1061,6 +1070,10 @@ nav > ul li a p {
 
 .right-0 {
   right: 0px;
+}
+
+.right-5 {
+  right: 1.25rem;
 }
 
 .right-\[calc\(\(100vw-85vw\)\/2\)\] {
@@ -2275,6 +2288,10 @@ body.open {
 
   .lg\:grid-cols-\[2fr_1fr\] {
     grid-template-columns: 2fr 1fr;
+  }
+
+  .lg\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .lg\:items-center {
