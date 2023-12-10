@@ -15,12 +15,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
     />
-    <script
+    <!-- <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
       integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-    ></script>
+    ></script> -->
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <div class="main">
@@ -97,25 +99,32 @@
           </div>
           <div class="gradientHolder h-screen flex items-end">
             <div class="bannerTitle relative z-10 text-white mb-20">
-              <h1 class="text-[50px] text-white mb-8 leading-[1]">
+              <h1
+                class="text-[50px] text-white mb-8 leading-[1]"
+                data-aos="fade-up"
+              >
                 Lorem ipsum dolor sit <br />
                 amet.
               </h1>
-              <p class="mb-8">
+              <p class="mb-8" data-aos="fade-up" data-aos-delay="200">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. <br />
                 Beatae debitis dolorum nesciunt impedit unde aliquid eaque
                 officiis? Tenetur!
               </p>
-              <div class="bannerAction flex gap-4">
+              <div
+                class="bannerAction flex gap-4 items-center"
+                data-aos="fade-up"
+                data-aos-delay="400"
+              >
                 <a
                   href="#"
                   class="btn bg-primary btn-hover relative overflow-hidden"
-                  ><p>Get Started</p></a
+                  ><p class="mb-0">Get Started</p></a
                 >
                 <a
                   href="#"
                   class="btn border border-white btn-hover relative overflow-hidden hover:border-[#071e32] transition-all duration-500"
-                  ><p>Talk to us</p></a
+                  ><p class="mb-0">Talk to us</p></a
                 >
               </div>
             </div>
@@ -530,6 +539,7 @@
       </section>
     </div>
   </body>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     const toggleMenu = document.querySelector(".toggleMenu");
     const sideNav = document.querySelector(".sideNav");
@@ -538,5 +548,6 @@
       sideNav.classList.toggle("open");
       toggleMenu.classList.toggle("open");
     });
+    AOS.init();
   </script>
 </html>

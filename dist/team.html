@@ -13,6 +13,7 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
   <body>
     <div class="topHeader py-6 bg-[#09141A] relative">
@@ -49,11 +50,15 @@
     >
       <div class="container relative">
         <div class="displayWrapper grid place-items-center h-[60vh]">
-          <div class="pageTitle leading-[1] z-10">
+          <div class="pageTitle leading-[1] z-10" data-aos="fade-up">
             <span class="text-[30px] uppercase">Meet</span>
             <h1 class="uppercase font-bold text-clamp">nvtpe team</h1>
           </div>
-          <p class="relative z-10 font-light max-w-[1300px] w-full mx-auto">
+          <p
+            class="relative z-10 font-light max-w-[1300px] w-full mx-auto"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis quasi
             perferendis cum delectus. Ex voluptatum veritatis tempore doloribus
             nostrum, explicabo consequuntur numquam dignissimos ipsam distinctio
@@ -63,6 +68,35 @@
             temporibus doloribus cupiditate placeat impedit facere culpa ut
             velit vero iusto!
           </p>
+          <div class="hidden md:block text-white absolute z-[50] -right-5">
+            <ul>
+              <li
+                class="w-[40px] h-[40px] mb-3 bg-blueDark grid place-content-center rounded"
+              >
+                <a class="" href=""><i class="fa-brands fa-facebook-f"></i></a>
+              </li>
+              <li
+                class="w-[40px] h-[40px] mb-3 bg-blueDark grid place-content-center rounded"
+              >
+                <a class="" href=""><i class="fa-brands fa-x-twitter"></i></a>
+              </li>
+              <li
+                class="w-[40px] h-[40px] mb-3 bg-blueDark grid place-content-center rounded"
+              >
+                <a class="" href=""><i class="fa-brands fa-instagram"></i></a>
+              </li>
+              <li
+                class="w-[40px] h-[40px] mb-3 bg-blueDark grid place-content-center rounded"
+              >
+                <a class="" href=""><i class="fa-brands fa-linkedin-in"></i></a>
+              </li>
+              <li
+                class="w-[40px] h-[40px] mb-3 bg-blueDark grid place-content-center rounded"
+              >
+                <a class="" href=""><i class="fa-brands fa-youtube"></i></a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </div>
@@ -71,9 +105,11 @@
       <div class="container">
         <div class="text-white grid lg:grid-cols-2 md:gap-10">
           <div class="team__timeline">
-            <h3 class="max-w-[150px]">A look back on the past</h3>
+            <h3 class="max-w-[150px]" data-aos="fade-up" data-aos-delay="100">
+              A look back on the past
+            </h3>
 
-            <div class="timeline__box">
+            <div class="timeline__box" data-aos="fade-up" data-aos-delay="100">
               <div></div>
               <div class="content">
                 <h4 class="relative">2010</h4>
@@ -86,7 +122,7 @@
               </div>
             </div>
 
-            <div class="timeline__box">
+            <div class="timeline__box" data-aos="fade-up" data-aos-delay="200">
               <div></div>
               <div class="content">
                 <h4 class="relative">2012</h4>
@@ -99,7 +135,7 @@
               </div>
             </div>
 
-            <div class="timeline__box">
+            <div class="timeline__box" data-aos="fade-up" data-aos-delay="300">
               <div></div>
               <div class="content">
                 <h4 class="relative">2013</h4>
@@ -112,7 +148,7 @@
               </div>
             </div>
 
-            <div class="timeline__box">
+            <div class="timeline__box" data-aos="fade-up" data-aos-delay="400">
               <div></div>
               <div class="content">
                 <h4 class="relative">2013</h4>
@@ -125,7 +161,7 @@
               </div>
             </div>
 
-            <div class="timeline__box">
+            <div class="timeline__box" data-aos="fade-up" data-aos-delay="500">
               <div></div>
               <div class="content">
                 <h4 class="relative">2013</h4>
@@ -138,7 +174,7 @@
               </div>
             </div>
 
-            <div class="timeline__box">
+            <div class="timeline__box" data-aos="fade-up" data-aos-delay="600">
               <div></div>
               <div class="content">
                 <h4 class="relative">2013</h4>
@@ -151,7 +187,7 @@
               </div>
             </div>
 
-            <div class="timeline__box">
+            <div class="timeline__box" data-aos="fade-up" data-aos-delay="700">
               <div></div>
               <div class="content">
                 <h4 class="relative">2013</h4>
@@ -164,7 +200,7 @@
               </div>
             </div>
 
-            <div class="timeline__box">
+            <div class="timeline__box" data-aos="fade-up" data-aos-delay="800">
               <div></div>
               <div class="content">
                 <h4 class="relative">2013</h4>
@@ -179,8 +215,10 @@
           </div>
 
           <div class="team__vm">
-            <h4 class="mb-10">Vision Statemant</h4>
-            <p class="mb-10">
+            <h4 class="mb-10" data-aos="fade-right" data-aos-delay="100">
+              Vision Statemant
+            </h4>
+            <p class="mb-10" data-aos="fade-right" data-aos-delay="200">
               Vision Statement LCTS strives to be a premier engineering (EPCm)
               firm and technology consultancy serving small and mid-sized
               businesses, capital project teams, financial institutes and
@@ -189,7 +227,11 @@
               professionalism and exceptional client service.
             </p>
 
-            <div class="team__vm__img grid md:grid-cols-2 gap-4 mb-32">
+            <div
+              class="team__vm__img grid md:grid-cols-2 gap-4 mb-32"
+              data-aos="fade-right"
+              data-aos-delay="300"
+            >
               <img
                 src="./img/blogPost-1.png"
                 alt=""
@@ -201,8 +243,10 @@
               </div>
             </div>
 
-            <h4 class="mb-10">Mission Statemant</h4>
-            <p class="mb-10">
+            <h4 class="mb-10" data-aos="fade-right" data-aos-delay="400">
+              Mission Statemant
+            </h4>
+            <p class="mb-10" data-aos="fade-right" data-aos-delay="500">
               Our mission is to provide world-class engineering services as well
               as technical and business consulting solutions and expertise to
               our clients, enabling them to achieve their long-term
@@ -212,7 +256,11 @@
               organizations.
             </p>
 
-            <div class="team__vm__img grid md:grid-cols-2 gap-4">
+            <div
+              class="team__vm__img grid md:grid-cols-2 gap-4"
+              data-aos="fade-right"
+              data-aos-delay="600"
+            >
               <div>
                 <img src="./img/blogPost-1.png" alt="" class="mb-4" />
                 <img src="./img/blogPost-1.png" alt="" />
@@ -232,7 +280,10 @@
     <section class="member mb-10">
       <div class="container">
         <div class="member__list grid md:grid-cols-3 md:gap-6">
-          <div class="member__card text-white relative overflow-hidden mb-6">
+          <div
+            class="member__card text-white relative overflow-hidden mb-6"
+            data-aos="fade-up"
+          >
             <img src="./img/theTeam.png" alt="" />
             <ul>
               <li><h5>Member Name</h5></li>
@@ -240,7 +291,11 @@
             </ul>
           </div>
 
-          <div class="member__card text-white relative overflow-hidden mb-6">
+          <div
+            class="member__card text-white relative overflow-hidden mb-6"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <img src="./img/theTeam.png" alt="" />
             <ul>
               <li><h5>Member Name</h5></li>
@@ -248,7 +303,11 @@
             </ul>
           </div>
 
-          <div class="member__card text-white relative overflow-hidden mb-6">
+          <div
+            class="member__card text-white relative overflow-hidden mb-6"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
             <img src="./img/theTeam.png" alt="" />
             <ul>
               <li><h5>Member Name</h5></li>
@@ -256,7 +315,11 @@
             </ul>
           </div>
 
-          <div class="member__card text-white relative overflow-hidden mb-6">
+          <div
+            class="member__card text-white relative overflow-hidden mb-6"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
             <img src="./img/theTeam.png" alt="" />
             <ul>
               <li><h5>Member Name</h5></li>
@@ -264,7 +327,11 @@
             </ul>
           </div>
 
-          <div class="member__card text-white relative overflow-hidden mb-6">
+          <div
+            class="member__card text-white relative overflow-hidden mb-6"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
             <img src="./img/theTeam.png" alt="" />
             <ul>
               <li><h5>Member Name</h5></li>
@@ -272,7 +339,11 @@
             </ul>
           </div>
 
-          <div class="member__card text-white relative overflow-hidden mb-6">
+          <div
+            class="member__card text-white relative overflow-hidden mb-6"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
             <img src="./img/theTeam.png" alt="" />
             <ul>
               <li><h5>Member Name</h5></li>
@@ -282,14 +353,13 @@
         </div>
       </div>
     </section>
-
     <section class="map relative">
       <div class="container">
         <div
           class="map__blurb text-center bg-greenDark text-white px-3 py-8 md:p-10 translate-y-8"
         >
-          <h4>Lorem, ipsum dolor</h4>
-          <p>
+          <h4 data-aos="fade-up">Lorem, ipsum dolor</h4>
+          <p data-aos="fade-up" data-aos-delay="200">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga atque
             delectus eum, a, eveniet aspernatur voluptas animi harum qui minima
             aliquam, quasi ex! Dolore fugiat sequi velit aspernatur, est illo
@@ -317,7 +387,7 @@
 
         <div class="map__contact py-16 text-white !bg-blueDark">
           <div class="flex justify-center">
-            <div class="grid md:grid-cols-3 md:gap-[60px]">
+            <div class="grid md:grid-cols-3 md:gap-[60px]" data-aos="fade-up">
               <div class="map__item mb-8 md:mb-0">
                 <h5>Visit Us</h5>
                 <p>2007 Woodland Springs <br />Houston Tx 77077</p>
@@ -336,7 +406,9 @@
         </div>
 
         <div
-          class="map__form text-white max-w-[360px] rounded-3xl bg-dark p-8 border-1 w-full mx-auto static lg:absolute right-[calc((100vw-1480px)/2)] top-1/3"
+          data-aos="fade-up"
+          data-aos-delay="1000"
+          class="map__form text-white max-w-[360px] rounded-3xl bg-dark p-8 border-1 w-full mx-auto static lg:absolute right-[calc((100vw-85vw)/2)] top-1/3"
         >
           <h4 class="mb-1">Contact Us</h4>
           <p class="mb-8 opacity-70">We want to hear from you</p>
@@ -360,6 +432,8 @@
     <footer class="bg-dark p-3 text-center text-white">
       <p>©TPE - Thermoplastic Elastomer 2023</p>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
     <script src="script.js"></script>
   </body>
 </html>
