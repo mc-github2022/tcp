@@ -44,25 +44,25 @@
         </div>
         <nav class="nav h-[39.3vh] flex justify-end">
           <ul id="mainNav" class="text-white">
-            <li class="product active">
+            <li class="nav__item product active">
               <a href="#product"><p class="mb-0">PRODUCT</p></a>
             </li>
-            <li class="materials">
+            <li class="nav__item materials">
               <a href="#materials"><p class="mb-0">MATERIALS</p></a>
             </li>
-            <li class="process">
+            <li class="nav__item process">
               <a href="#process"><p class="mb-0">PROCESS</p></a>
             </li>
-            <li class="partners">
+            <li class="nav__item partners">
               <a href="#partners"><p class="mb-0">PARTNERS</p></a>
             </li>
-            <li class="theTeam">
+            <li class="nav__item theTeam">
               <a href="#theTeam"><p class="mb-0">NVTPE TEAM</p></a>
             </li>
-            <li class="blogs">
+            <li class="nav__item blogs">
               <a href="#blogs"><p class="mb-0">BLOGS</p></a>
             </li>
-            <li class="contactUs">
+            <li class="nav__item contactUs">
               <a href="#contactUs"><p class="mb-0">CONTACT US</p></a>
             </li>
           </ul>
@@ -639,6 +639,21 @@
       toggleMenu.classList.toggle("open");
     });
     AOS.init();
+
+    const navLink = document.querySelectorAll(".nav__item");
+
+    navLink.forEach((link) => {
+      link.addEventListener("click", () => {
+        removeActive();
+        link.classList.add("active");
+      });
+    });
+
+    function removeActive() {
+      navLink.forEach((item) => {
+        item.classList.remove("active");
+      });
+    }
 
     const aosAnimation = document.querySelectorAll("[data-aos]");
     observer = new IntersectionObserver((entries) => {
