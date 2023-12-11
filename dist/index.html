@@ -617,6 +617,7 @@
   </script>
   <script>
     let section_name = document.getElementById("materials");
+
     let sectionObserver = new IntersectionObserver(
       (entries, observer) => {
         let [entry] = entries;
@@ -648,6 +649,7 @@
         threshold: window.innerWidth > 768 ? 0.4 : 0.3,
       }
     );
+
     sectionObserver.observe(section_name);
   </script>
 </html>
