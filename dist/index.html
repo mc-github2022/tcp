@@ -39,8 +39,8 @@
           </div>
         </div>
         <nav class="nav h-[39.3vh] flex justify-end">
-          <ul id="mainNav" class="text-white">
-            <li class="product active">
+          <ul id="mainNav" class="mainNav text-white">
+            <li class="product">
               <a href="#product"><p class="mb-0">PRODUCT</p></a>
             </li>
             <li class="materials">
@@ -192,9 +192,7 @@
           </div>
         </div>
       </section>
-      <section
-        id="materials"
-        class="materials py-10 2xl:h-screen snap-center text-white">
+      <section id="materials" class="py-10 2xl:h-screen snap-center text-white">
         <div class="contentContainer px-8">
           <h2 class="text-[40px] text-white mb-10" data-aos="fade-up">
             Raw Materials
@@ -616,5 +614,40 @@
     aosAnimation.forEach((aosObject) => {
       observer.observe(aosObject);
     });
+  </script>
+  <script>
+    let section_name = document.getElementById("materials");
+    let sectionObserver = new IntersectionObserver(
+      (entries, observer) => {
+        let [entry] = entries;
+        if (!entry.isIntersecting) return;
+
+        const nav = document.querySelectorAll(".mainNav li a");
+
+        nav.forEach((nav) => {
+          function removeActive() {
+            nav.classList.remove("active");
+          }
+          function addActive() {
+            navId = nav.getAttribute("href").substring(1);
+
+            if (navId == "materials") {
+              removeActive();
+              nav.classList.add("active");
+              console.log(nav);
+            } else {
+              nav.classList.remove("active");
+            }
+          }
+          addActive();
+        });
+        observer.unobserve(section_name);
+      },
+      {
+        root: null,
+        threshold: window.innerWidth > 768 ? 0.4 : 0.3,
+      }
+    );
+    sectionObserver.observe(section_name);
   </script>
 </html>
