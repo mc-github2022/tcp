@@ -616,6 +616,8 @@
     });
   </script>
   <script>
+    // materialsObserve
+
     let section_name = document.getElementById("materials");
 
     let sectionObserver = new IntersectionObserver(
@@ -651,5 +653,47 @@
     );
 
     sectionObserver.observe(section_name);
+
+    // materialsObserve End ----------
+
+    // ContactObserve
+
+    let section_contact = document.getElementById("contactUs");
+
+    let sectionObserverContact = new IntersectionObserver(
+      (entries, observer) => {
+        let [entry] = entries;
+        if (!entry.isIntersecting) return;
+
+        const nav = document.querySelectorAll(".mainNav li a");
+
+        nav.forEach((nav) => {
+          function removeActive() {
+            nav.classList.remove("active");
+          }
+          function addActive() {
+            navId = nav.getAttribute("href").substring(1);
+
+            if (navId == "contactUs") {
+              removeActive();
+              nav.classList.add("active");
+              console.log(nav);
+            } else {
+              nav.classList.remove("active");
+            }
+          }
+          addActive();
+        });
+        observer.unobserve(section_contact);
+      },
+      {
+        root: null,
+        threshold: window.innerWidth > 768 ? 0.4 : 0.3,
+      }
+    );
+
+    sectionObserverContact.observe(section_contact);
+
+    // ContactObserve ----------
   </script>
 </html>

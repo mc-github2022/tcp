@@ -113,7 +113,7 @@
   }
 
   .map__form input[type="submit"] {
-    @apply text-white rounded-lg outline-none border-none transition-colors cursor-pointer py-4;
+    @apply text-white rounded-lg bg-greenDark hover:bg-greenDarker outline-none border-none transition-colors cursor-pointer py-4;
   }
 
   .timeline__box {
